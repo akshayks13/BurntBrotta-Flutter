@@ -63,6 +63,10 @@ flutter:
   assets:
   - lib/images/salad.png
   - lib/images/cooking.png
+  - lib/images/pan.png
+  - lib/images/recipie_imgs/brotta.jpg
+  - lib/images/recipie_imgs/chocolate mousse.jpg
+  - lib/images/recipie_imgs/noodles.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
