@@ -1,24 +1,32 @@
+
 import 'package:burntbrotta/models/food.dart';
+import 'package:burntbrotta/pages/foodDetails.dart';
 import 'package:burntbrotta/pages/foodTile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+
 class RecipiesPage extends StatelessWidget {
   const RecipiesPage({super.key});
+
 
   @override
   Widget build(BuildContext context) {
 
     List recipies = [
-      Food(name: "Signature Burnt Parotta", duration: "2 hours", serving: 1, imgpath: "lib/images/recipie_imgs/brotta.jpg"),
-      Food(name: "Indonesian Chicken Noodles", duration: "40 mins", serving: 1, imgpath: "lib/images/recipie_imgs/noodles.jpg"),
-      Food(name: "Chocolate Raspberry Mousse", duration: "20 mins", serving: 1, imgpath: "lib/images/recipie_imgs/chocolate mousse.jpg"),
-      Food(name: "Oven Baked Tofu Shakshuka", duration: "40 mins", serving: 1, imgpath: "lib/images/recipie_imgs/tofu shakshuka.jpg"),
-      Food(name: "Bubble Tea", duration: "15 mins", serving: 1, imgpath: "lib/images/recipie_imgs/bubble tea.jpg"),
-      Food(name: "Thai Red Curry", duration: "40 mins", serving: 1, imgpath: "lib/images/recipie_imgs/Thai red curry.jpg"),
+      Food(name: "Signature Burnt Parotta", duration: "2 hours", serving: 1, level: "Intermediate", imgpath: "lib/images/recipie_imgs/brotta.jpg"),
+      Food(name: "Indonesian Chicken Noodles", duration: "40 mins", serving: 1, level: "Easy", imgpath: "lib/images/recipie_imgs/noodles.jpg"),
+      Food(name: "Chocolate Raspberry Mousse", duration: "20 mins", serving: 1, level: "Easy", imgpath: "lib/images/recipie_imgs/chocolate mousse.jpg"),
+      Food(name: "Oven Baked Tofu Shakshuka", duration: "40 mins", serving: 1, level: "Intermediate", imgpath: "lib/images/recipie_imgs/tofu shakshuka.jpg"),
+      Food(name: "Bubble Tea", duration: "15 mins", serving: 1, level: "Easy",imgpath: "lib/images/recipie_imgs/bubble tea.jpg"),
+      Food(name: "Thai Red Curry", duration: "40 mins", serving: 1, level: "Intermediate", imgpath: "lib/images/recipie_imgs/Thai red curry.jpg"),
     ];
+
+    void get_recipie_details(BuildContext context, int index) {
+      Navigator.push(context, MaterialPageRoute(builder: (context) => FoodDetails(food: recipies[index],)));
+    }
 
     return Scaffold(
       appBar: AppBar(title: Text("BURNT BROTTA", style: GoogleFonts.climateCrisis(fontSize: 20, height: 0.9),),
@@ -78,7 +86,7 @@ class RecipiesPage extends StatelessWidget {
             Expanded(
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                  itemCount: recipies.length, itemBuilder: (context, index)=>FoodTile(food: recipies[index])),
+                  itemCount: recipies.length, itemBuilder: (context, index)=>FoodTile(food: recipies[index], ontap: () => get_recipie_details(context, index),)),
             ),
             ],
               ),
@@ -89,4 +97,6 @@ class RecipiesPage extends StatelessWidget {
 
     );
   }
+
+
 }

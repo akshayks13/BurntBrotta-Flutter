@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class InfoBox extends StatelessWidget {
   String name;
@@ -12,8 +13,8 @@ class InfoBox extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(color: Colors.yellow[400], borderRadius: BorderRadius.circular(5)),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 6.0, vertical: 3),
-          child: Text(name),
+          padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 3),
+          child: Text(name, style: GoogleFonts.poppins(fontSize:13), ),
         ),
       ),
     );
