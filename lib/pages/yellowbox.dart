@@ -8,9 +8,9 @@ class InfoBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(5.0),
+      padding: const EdgeInsets.symmetric(horizontal: 6.0, vertical: 2),
       child: Container(
-        decoration: BoxDecoration(color: Colors.yellow, borderRadius: BorderRadius.circular(5)),
+        decoration: BoxDecoration(color: Colors.yellow[400], borderRadius: BorderRadius.circular(5)),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 6.0, vertical: 3),
           child: Text(name),
