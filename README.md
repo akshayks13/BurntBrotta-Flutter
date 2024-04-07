@@ -1,3 +1,7 @@
 ## Burnt Brotta App
 
-<img src="home.png" width=500></img>
+### Home Page
+<img src="home.png" width=300></img>
+
+### Recipe Page
+<img src="recipepage.png" width=300></img>
