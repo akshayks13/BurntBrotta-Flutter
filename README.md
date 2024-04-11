@@ -1,13 +1,5 @@
 ## Burnt Brotta App
 
-### Home Page
-<img src="home.png" width=300></img>
-
-### Recipe Page
-<img src="recipepage.png" width=300></img>
-
-### Details Page
-<img src="details.png" width=300></img>
-
-### Favourites Page
-<img src="favourites.png" width=300></img>
+| Home Page                  | Recipe Page                  | Details Page                 | Favourites Page              |
+|----------------------------|-------------------------------|-------------------------------|-------------------------------|
+| ![Home Page](home.png){width=300}     | ![Recipe Page](recipepage.png){width=300} | ![Details Page](details.png){width=300} | ![Favourites Page](favourites.png){width=300} |
