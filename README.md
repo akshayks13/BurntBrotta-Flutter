@@ -5,3 +5,6 @@
 
 ### Recipe Page
 <img src="recipepage.png" width=300></img>
+
+### Details Page
+<img src="details.png" width=300></img>
