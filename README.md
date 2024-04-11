@@ -2,4 +2,4 @@
 
 | Home Page                  | Recipe Page                  | Details Page                 | Favourites Page              |
 |----------------------------|-------------------------------|-------------------------------|-------------------------------|
-| ![Home Page](home.png){width=300}     | ![Recipe Page](recipepage.png){width=300} | ![Details Page](details.png){width=300} | ![Favourites Page](favourites.png){width=300} |
+| ![Home Page](home.png)     | ![Recipe Page](recipepage.png) | ![Details Page](details.png) | ![Favourites Page](favourites.png) |
