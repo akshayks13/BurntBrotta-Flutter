@@ -8,3 +8,6 @@
 
 ### Details Page
 <img src="details.png" width=300></img>
+
+### Favourites Page
+<img src="favourites.png" width=300></img>
