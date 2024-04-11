@@ -31,6 +31,10 @@ class RecipiesPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("BURNT BROTTA", style: GoogleFonts.climateCrisis(fontSize: 20, height: 0.9),),
           leading: const Icon(Icons.menu),
+        actions: [Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: IconButton(onPressed: (){Navigator.pushNamed(context, "/favourites");}, icon: Icon(Icons.favorite)),
+        )],
       ),
           body: Expanded(
             child: Column(
