@@ -7,6 +7,10 @@ class Favourites extends ChangeNotifier {
   // Getter method
   List<Food> get favs => _favs;
 
+  bool isFavorite(Food food) {
+    return _favs.contains(food);
+  }
+
   void addtofavs(Food food) {
     if (!_favs.contains(food)) {
       _favs.add(food);
